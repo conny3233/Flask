@@ -16,7 +16,6 @@ def led_on():
     except requests.exceptions.RequestException as e: 
         return jsonify({"error": str(e)}), 500
 
-
 @app.route('/led/off') 
 def led_off():
     try:
